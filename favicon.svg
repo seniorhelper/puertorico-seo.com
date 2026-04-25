@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="#0D1117"/>
+  
+  <!-- PR Flag triangle (blue) -->
+  <polygon points="4,60 4,4 34,32" fill="#0A3161"/>
+  
+  <!-- Star in triangle -->
+  <polygon points="19,32 21.5,24 24,32 16.5,27 21.5,27" fill="white" opacity="0.95"/>
+  
+  <!-- Red stripes -->
+  <rect x="34" y="4" width="26" height="10" rx="1" fill="#CE1126"/>
+  <rect x="34" y="22" width="26" height="10" rx="1" fill="#FAFAF7" opacity="0.9"/>
+  <rect x="34" y="40" width="26" height="10" rx="1" fill="#CE1126"/>
+  <rect x="34" y="54" width="26" height="6" rx="1" fill="#FAFAF7" opacity="0.9"/>
+  
+  <!-- Teal accent dot (AIO signal) -->
+  <circle cx="54" cy="10" r="5" fill="#00A99D" opacity="0.9"/>
+  <circle cx="54" cy="10" r="2.5" fill="white" opacity="0.8"/>
+</svg>
