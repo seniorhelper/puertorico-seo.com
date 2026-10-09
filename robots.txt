@@ -26,4 +26,4 @@ Allow: /
 User-agent: Omgilibot
 Allow: /
 
-Sitemap: https://puertoricoSEO.com/sitemap.xml
+Sitemap: https://puertorico-seo.com/sitemap.xml
