@@ -444,6 +444,7 @@
 .post .btn{display:inline-block;margin-top:10px;background:var(--pr-red);color:#fff;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none}
 .post .crumbs{font-size:.85rem;color:var(--pr-muted)}
 </style>
+<style id="logo-280">.lang-logo{font-size:1.66rem}.pr-menu{display:none}@media(max-width:900px){.lang-logo{font-size:1.12rem;white-space:nowrap}.lang-bar{padding:10px 14px;gap:10px}.pr-menu{display:inline-flex;align-items:center;gap:6px;margin-left:auto;background:transparent;border:1px solid var(--pr-border);color:var(--pr-white);font:700 .9rem var(--font-body);padding:8px 12px;border-radius:10px;cursor:pointer}.lang-bar.open .nav-links{display:flex!important;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(13,17,23,.98);padding:14px 24px 18px;gap:4px;border-bottom:1px solid var(--pr-border)}.lang-bar.open .nav-links a{display:block;padding:10px 0;font-size:1rem;color:var(--pr-white)}}</style>
 </head>
 <body>
 <nav class="lang-bar" role="navigation" aria-label="Primary navigation">
@@ -452,7 +453,8 @@
     <span>puertorico-<span style="color:var(--pr-red)">seo</span>.com</span>
   </a>
 
-  <ul class="nav-links">
+  <button type="button" class="pr-menu" aria-expanded="false" aria-controls="prNav" aria-label="Open menu">&#9776;</button>
+  <ul class="nav-links" id="prNav">
     <li><a href="/#services" data-en="Services" data-es="Servicios">Services</a></li>
     <li><a href="/#why-aio" data-en="AIO &amp; GEO" data-es="AIO y GEO">AIO &amp; GEO</a></li>
     <li><a href="/#results" data-en="Results" data-es="Resultados">Results</a></li>
@@ -562,5 +564,6 @@
   </div>
 </footer>
 <script>var y=document.getElementById('footer-year');if(y)y.textContent=new Date().getFullYear();</script>
+<script>(function(){var b=document.querySelector('.pr-menu'),bar=document.querySelector('.lang-bar'),ul=document.getElementById('prNav');if(!b||!bar||!ul)return;function set(o){bar.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false');b.innerHTML=o?'&#10005;':'&#9776;';b.setAttribute('aria-label',o?'Close menu':'Open menu')}b.addEventListener('click',function(){set(!bar.classList.contains('open'))});ul.addEventListener('click',function(e){if(e.target.tagName==='A')set(false)})})();</script>
 </body>
 </html>
